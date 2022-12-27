@@ -55,6 +55,7 @@ require('packer').startup(function(use)
   use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
   use('theprimeagen/harpoon') -- Harpoon
   use('mbbill/undotree')
+  use('nelsyeung/twig.vim') -- Twig file syntax support
 
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
   use("szw/vim-maximizer") -- maximizers & restores current window
