@@ -59,6 +59,10 @@ require('packer').startup(function(use)
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
   use("szw/vim-maximizer") -- maximizers & restores current window
 
+  use('kyazdani42/nvim-web-devicons') -- File icons
+  use('windwp/nvim-autopairs')
+  use('windwp/nvim-ts-autotag')
+
   -- Fuzzy Finder (files, lsp, etc)
   use { 'nvim-telescope/telescope.nvim', branch = '0.1.x', requires = { 'nvim-lua/plenary.nvim' } }
 
