@@ -64,6 +64,33 @@ require('packer').startup(function(use)
   use('windwp/nvim-autopairs')
   use('windwp/nvim-ts-autotag')
 
+  -- ChatGPT Nvim
+  -- use({
+  --   "jackMort/ChatGPT.nvim",
+  --     config = function()
+  --       require("chatgpt").setup({
+  --         api_key_cmd = "echo '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'"
+  --     })
+  --     end,
+  --     requires = {
+  --       "MunifTanjim/nui.nvim",
+  --       "nvim-lua/plenary.nvim",
+  --       "nvim-telescope/telescope.nvim"
+  --     }
+  -- })
+  --
+
+  -- Gp (GPT) Nvim
+  use({
+      "robitx/gp.nvim",
+      config = function()
+        require("gp").setup({
+          openai_api_key = os.getenv("OPENAI_API_KEY"),
+          chat_topic_gen_model = "gpt-4"
+        })
+      end,
+  })
+
   -- Fuzzy Finder (files, lsp, etc)
   use { 'nvim-telescope/telescope.nvim', branch = '0.1.x', requires = { 'nvim-lua/plenary.nvim' } }
 

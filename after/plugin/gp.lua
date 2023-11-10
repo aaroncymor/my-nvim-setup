@@ -1,0 +1,6 @@
+vim.keymap.set({"n", "i"}, "<leader>gpt", ":GpChatToggle<CR>")
+vim.keymap.set({"n", "i"}, "<leader>gpr", ":GpChatRespond<CR>")
+vim.keymap.set({"n", "i"}, "<leader>gpf", ":GpChatFinder<CR>")
+vim.keymap.set({"n", "i"}, "<leader>gpd", ":GpChatDelete<CR>")
+vim.keymap.set({"n", "i"}, "<leader>gpa", ":GpPrepend<CR>")
+vim.keymap.set({"n", "i"}, "<leader>gpa", ":GpAppend<CR>")
